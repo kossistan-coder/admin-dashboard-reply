@@ -1,0 +1,84 @@
+
+:root{
+    --primary :rgba(93, 207, 183, 0.8);
+    --secondary:rgba(6, 5, 56, 0.8);
+    --third:rgba(226, 226, 241, 0);
+}
+body{
+    
+    background:linear-gradient(135deg,var(--primary) , var(--secondary)), url('./image/pexel2.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.grid-2{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 10px;
+}
+label , .ui.checkbox , #connect{
+    display: flex !important;
+    justify-content: flex-start !important;
+    font-family:'Nunito', sans-serif !important;
+}
+
+.ui.input{
+    width: 100%;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-family:'Nunito', sans-serif !important;
+}
+
+#seg1{
+    background-color:#fcfdff;
+    width: 400px;
+}
+#seg2{
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+input , .ui.button , .ui.header , .ui.message{
+    font-family:'Nunito', sans-serif !important;
+}
+#seg-mobile{
+    padding-right: 40px;
+}
+body > .grid {
+    height: 100%;
+  }
+  body #font{
+    font-family:'Nunito', sans-serif !important;
+  }
+  
+  .column {
+    max-width: 500px;
+  }
+
+
+  @media screen and (min-width:292px) and (max-width:768px){
+      .column{
+          max-width: 350px;
+      }
+  }
+
+  @media screen and (max-width:291px) {
+      .column{
+          max-width:90%;
+      }
+
+      #seg-mobile{
+        padding-right: 80px;
+    }
+  }

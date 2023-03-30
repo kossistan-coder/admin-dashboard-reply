@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Mukta:wght@300&family=Nunito&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="compte.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+              <form action="" method="post" class="ui form">
+                <div class="ui stacked segment" id="boite" style="margin-top: 50px;">
+                    <h1 class="ui header">
+                        <div class="content">SafeBank</div>
+                        <div class="sub header">
+                            Créez un compte
+                        </div>
+                    </h1>
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="" id="font">Nom</label>
+                            <input type="text" placeholder="Entrer votre nom">
+                        </div>
+                        <div class="field">
+                            <label for="">Prenom</label>
+                            <input type="text" placeholder="Entrer votre prenom" >
+                        </div>
+                    </div>
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">Pseudo</label>
+                            <input type="text" placeholder="Entrer votre pseudonyme">
+                        </div>
+                        <div class="field">
+                                <label for="">Sexe</label>
+                                <select name="" id="" class="ui dropdown">
+                                    <option value="" class="item">Genre</option>
+                                    <option value="0">Masculin</option>
+                                    <option value="1">Feminin</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="">Numéro</label>
+                        <input type="tel" placeholder="227776725029">
+                    </div>
+                    <div class="field">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Entrer votre email">
+                    </div>
+                    <div class="field">
+                        <label for="">Mot de passe</label>
+                        <input type="password" placeholder="Entrer votre mot de passe">
+                    </div>
+                    <div class="field">
+                        <label for="">Confirmer le mot de passe</label>
+                        <input type="password" placeholder="Confirmation de mot de passe">
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="example">
+                            <label>J'accepte les <a href=""> termes</a> et <a href=""> conditions </a> d'utilisations </label>
+                          </div>
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="ui primary fluid button" >Valider</button>
+                    </div>
+                </div>
+              </form>
+          
+              <div class="ui message">
+                Vous n'avez pas encore de compte ?<a href="#"> inscrivez vous .</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="./jquery.js"></script>
+    <script src="./semantic/semantic.min.js"></script>
+    <script src="./semantic/components/transition.min.js"></script>
+    <script src="./semantic/components/dropdown.min.js"></script>
+    <script>
+        $(document).ready(function (params) {
+            $('#boite')
+            .transition('jiggle')
+            ;
+            $('.ui.dropdown')
+            .dropdown()
+            ;
+        })
+    </script>
+</body>
+</html>

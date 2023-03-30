@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Mukta:wght@300&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="compte.css">
+    <link rel="stylesheet" href="semantic/components/segment.min.css">
+    <link rel="stylesheet" href="semantic/components/header.min.css">
+    <link rel="stylesheet" href="semantic/components/form.min.css">
+    <link rel="stylesheet" href="semantic/components/container.min.css">
+    <link rel="stylesheet" href="semantic/components/transition.min.css">
+    <link rel="stylesheet" href="semantic/components/grid.min.css">
+    <link rel="stylesheet" href="semantic/components/icon.min.css">
+    <link rel="stylesheet" href="semantic/components/button.min.css">
+    <link rel="stylesheet" href="semantic/components/input.min.css">
+    <link rel="stylesheet" href="semantic/components/checkbox.min.css">
+    <link rel="stylesheet" href="semantic/components/message.min.css">
+   
+    <title>Document</title>
+</head>
+<body style="overflow: hidden;">
+    
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <form class="ui form" method="post" id="boite">
+                <div class="ui stacked segment" id="seg-mobile" >
+                    <h2 class="ui header" style="text-align: center;">
+                        <div class="content">
+                            SafeBank
+                            <div class="sub header">
+                                Connectez vous a votre back office
+                            </div>
+                        </div>
+                    </h2>
+                    <div class="field">
+                        <label for="">Email</label>
+                        <div class="ui left icon input">
+                            <input type="email" placeholder="Entrer votre email">
+                            <i class="user icon"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="">Mot de passe</label>
+                        <div class="ui left icon input">
+                            <input type="password" placeholder="Entrer votre mot de passe">
+                            <i class="lock icon"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                          <input type="checkbox" tabindex="0" >
+                          <label>Se souvenir de moi </label>
+                        </div>
+                    </div>
+                    <div class="field" id="connect">
+                        <button class="ui tiny primary button">
+                            Me connecter
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="ui message">
+                Vous n'avez pas encore de compte ? <a href="">inscrivez vous</a> 
+            </div>
+        </div>
+    </div>
+    <script src="./jquery.js"></script>
+    <script src="./semantic/semantic.min.js"></script>
+    <script src="./semantic/components/transition.min.js"></script>
+    <script>
+        $(document).ready(function (params) {
+            $('#boite')
+            .transition('jiggle')
+            ;
+        })
+    </script>
+</body>
+</html>
